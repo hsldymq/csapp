@@ -1,0 +1,6 @@
+数组  元素大小    整个数组大小  起始地址    元素i
+S       2           14          Xs          Xs + 2 * i
+T       8           24          Xt          Xt + 8 * i
+U       8           48          Xu          Xu + 8 * i
+V       4           32          Xv          Xv + 4 * i
+W       8           32          Xw          Xw + 8 * i

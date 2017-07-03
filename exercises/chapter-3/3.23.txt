@@ -1,0 +1,17 @@
+A. %rax存放x, %rcx存放y, %rdx存放n
+
+B. 不占用寄存器,而是使用其指向的变量所使用的寄存器
+
+C.
+dw_loop:
+    movq %rdi, %rax ; initialize x
+    movq %rdi, %rcx ;
+    imulq %rdi, $rcx ; compute y = x * x
+    leaq (%rdi, %rdi), %rdx ; compute n = 2 * x
+.L2:
+    leaq 1(%rcx, %rax), %rax ; add y to x and increment x
+    subq $1, %rdx ; decrement n
+    testq %rdx, %rdx ; test n
+    jg .L2 ; if n > 0, jump to loop
+    rep ret ; return
+
