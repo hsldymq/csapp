@@ -1,0 +1,21 @@
+absSum:
+    irmovq $8, %r8      ; 常数8
+    irmovq $1, %r9      ; 常熟1
+    xorq %r10, %r10     ; 常数0
+    irmovq $-1, $11     ; 常数-1,用于按位取反
+    xorq %rax, %rax     ; 返回值sum
+    andq %rsi, %rsi
+    jmp test
+loop:
+    mrmovq (%rdi), %rcx ; *start
+    rrmovq %rcx, %rdx   ; 用于计算取负的值
+    xorq %r11, %rdx
+    addq %r9, %rdx      ; 取负
+    subq $r10, %rdx
+    cmovge %rdx, %rcx
+    addq %rcx, %rax
+    addq %r8, %rdi
+    subq %r9, %rsi
+test:
+    jne loop
+    ret

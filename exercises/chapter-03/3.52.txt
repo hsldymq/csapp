@@ -1,0 +1,23 @@
+A.
+    a: $xmm0
+    b: %rdi
+    c: $xmm1
+    d: %esi
+
+B.
+    a: %edi
+    b: %rsi
+    c: %rdx
+    d: %rcx
+
+C.
+    a: %rdi
+    b: %xmm0
+    c: %esi
+    d: %xmm1
+
+D.
+    a: %xmm0
+    b: %rdi
+    c: %xmm1
+    d: %xmm2

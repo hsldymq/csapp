@@ -1,0 +1,19 @@
+A. 
+    00 00 00 00 00 40 00 76 返回地址
+    01 23 45 67 89 AB CD EF %rbx被压入栈中的值
+    XX XX XX XX XX XX XX XX
+    XX XX XX XX XX XX XX XX %rsp+0x10后给局部变量buf与result的空间,%rsp位置在此行最低位(即最右边的00处)
+
+B. 
+    00 00 00 00 00 40 00 34 
+    33 32 31 30 39 38 37 36
+    35 34 33 32 31 30 39 38
+    37 36 35 34 33 32 31 30
+
+C. 试图返回到 0x400034
+
+D. %rbx, %rip
+
+E. 
+    1. malloc的返回值是void指针,需要转换 X (return前检查指针是否为NULL)
+    2. strlen可能无法正确算出字符长度 X (应该strlen + 1)
