@@ -1,0 +1,21 @@
+取指:
+    icode:ifun <- M1[0x02c] = B:0
+    rA:rB <- M1[0x02d] = 0:F
+    valP <- 0x02e
+
+译码:
+    valA <- R[%rsp] = 120
+    valB <- R[%rsp] = 120
+
+执行:
+    valE <- 120 + 8 = 128
+
+访存:
+    valM <- M8[120] = 9
+
+回写:
+    R[%rsp] <- valE = 128
+    R[%rax] <- valM = 9
+
+更新:
+    PC <- valP = 0x02e

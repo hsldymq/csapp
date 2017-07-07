@@ -1,0 +1,18 @@
+取指:
+    icode:ifun <- M1[PC]
+    rA:rB <- M1[PC + 1]
+    valP <- PC + 2
+
+译码:
+    valA <- R[rA]
+    valB <- R[rB]
+
+执行:
+    Cnd <- Cond(<x, x, x>, ifun)
+    valE <- valA + 0
+
+写回:
+    R[rB] <- Cnd ? valE : R[rB]
+
+更新PC:
+    PC <- valP

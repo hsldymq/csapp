@@ -1,0 +1,23 @@
+1.
+取指:
+    icode:ifun <- M1[PC] = A:0
+    rA:rB <- M1[PC + 1] = 4:F
+    valP <- PC + 2
+
+译码:
+    valA <- R[%rsp]
+    valB <- R[%rsp]
+
+执行:
+    valE <- valB - 8
+
+访存:
+    M8[valE] <- valA
+
+回写:
+    R[%rsp] <- valE = valB - 8 = R[%rsp] - 8
+
+更新:
+    PC <- valP
+
+2. 一致
