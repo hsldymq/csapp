@@ -1,0 +1,5 @@
+word dstM = [
+    icode in {IMRMOVQ, IPOPQ} : rA;
+    icode in {IRET} : PC;
+    1: RNONE;
+];

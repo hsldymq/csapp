@@ -1,0 +1,6 @@
+word Stat = [
+    !instr_valid : SINS;
+    imem_error || dmem_error : SADR;
+    icode in {IHALT} : SHLT;
+    1 : SAOK;
+];

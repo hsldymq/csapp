@@ -1,0 +1,6 @@
+word f_stat = [
+    !instr_valid : SINS;
+    imem_error : SADR;
+    icode in {IHALT} : SHLT;
+    1 : SAOK;
+];

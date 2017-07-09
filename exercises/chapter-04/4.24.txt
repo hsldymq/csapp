@@ -1,0 +1,6 @@
+word dstE = [
+    icode in {IRRMOVQ} && Cnd : rB;
+    icode in {IOPQ, IIRMOVQ} : rB;
+    icode in {IPUSHQ, IPOPQ, ICALL, IRET} : RRSP;
+    1 : RNONE;
+];
