@@ -1,0 +1,8 @@
+Tavg-seek = 8ms
+
+Tavg-rotation = 1/2 * 60000 / 15000 = 2ms
+
+Tavg-trasfer = (60000/15000) * (1/500) = 0.008ms
+
+所以Taccess = 8ms + 2ms + 0.008ms = 10.008ms
+
