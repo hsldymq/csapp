@@ -1,0 +1,2 @@
+12      11      10      09      08      07      06      05      04      03      02      01      00
+CT      CT      CT      CT      CT      CT      CT      CT      CI      CI      CI      CO      CO
