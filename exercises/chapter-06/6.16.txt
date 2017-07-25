@@ -1,0 +1,35 @@
+组0行0: 
+    binary: 0 0 0 0 1 0 0 1 0 0 0 x x
+    hex: 0x0120 - 0x0123
+
+组1行0:
+    binary: 1 0 0 0 1 0 0 1 0 0 1 x x
+    hex: 0x1124 - 0x1127
+
+组1行1:
+    binary: 0 1 0 1 1 0 0 0 0 0 1 x x
+    hex: 0x0B04 - 0x0B07
+
+组3行1:
+    binary: 0 0 1 1 0 0 1 0 0 1 1 x x
+    hex: 0x064C - 0x064F
+
+组4行0:
+    binary: 1 1 0 0 0 1 1 1 1 0 0 x x
+    hex: 0x18F0 - 0x18F3
+
+组4行1:
+    binary: 0 0 0 0 1 0 0 1 1 0 0 x x
+    hex: 0x0130 - 0x0133
+
+组5行0:
+    binary: 0 1 1 1 0 0 0 1 1 0 1 x x
+    hex: 0x0E34 - 0x0E37
+
+组6行0:
+    binary: 1 0 0 1 0 0 0 1 1 1 0 x x
+    hex: 0x1238 - 0x123B
+
+组7行1:
+    binary: 1 1 0 1 1 1 1 0 1 1 1 x x
+    hex: 0x1BDC - 0x1BDF
