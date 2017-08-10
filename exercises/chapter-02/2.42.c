@@ -2,7 +2,7 @@
 #include <limits.h>
 
 int div16(int n) {
-    int neg_flag = !!(INT_MIN & n);
+    int neg_flag = n >> 31;
 
     return (n + (neg_flag << 4) - neg_flag) >> 4;
 }
