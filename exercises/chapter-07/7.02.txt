@@ -1,0 +1,7 @@
+A.a     REF(main.1) -> DEF(main.1)
+A.b     REF(main.2) -> DEF(main.1)
+
+B       模块1的main函数与模块2的main变量都属于强符号,将报错(违反规则1)
+
+C.a     REF(x.1) -> DEF(x.2)
+C.b     REF(x.2) -> DEF(x.2)
